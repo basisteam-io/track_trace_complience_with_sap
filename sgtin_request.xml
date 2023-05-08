@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:INT_SNR_REQ_SYNC>         
+         <IS_TRADE_ITEM>
+            <TRADE_ITEM_TYPE>GTIN</TRADE_ITEM_TYPE>
+            <TRADE_ITEM_ID>GTIN_HERE</TRADE_ITEM_ID>
+         </IS_TRADE_ITEM>
+         <!--Optional:-->
+         <IV_LIST_RANGE>L</IV_LIST_RANGE>
+         <!--Optional:-->
+         <IV_READYLY_ENCODE>1</IV_READYLY_ENCODE>
+         <IV_SIZE>500</IV_SIZE>
+         <IV_SYSTEM>PHARMTRACE</IV_SYSTEM>
+         <IB_ONLY_EXACT>X</IB_ONLY_EXACT>
+      </urn:INT_SNR_REQ_SYNC>
+   </soapenv:Body>
+</soapenv:Envelope> 
