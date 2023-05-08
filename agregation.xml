@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:epcglobal:epcis:xsd:1" xmlns:stan="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <epcis:EPCISDocument creationDate="2019-07-09T16:53:50Z" schemaVersion="1.1" xmlns:epcis="urn:epcglobal:epcis:xsd:1" xmlns:gs1ushc="http://epcis.gs1us.org/hc/ns" xmlns:sbdh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+         <EPCISHeader>
+            <SAPHeaderExtension>
+               <SAPQueueMessageSender>ProductionLine</SAPQueueMessageSender>
+            </SAPHeaderExtension>
+         </EPCISHeader>
+         <EPCISBody>
+            <EventList>
+               <AggregationEvent>
+                  <eventTime>2019-07-09T16:54:00.1833000Z</eventTime>
+                  <eventTimeZoneOffset>+01:00</eventTimeZoneOffset>
+                  <!--New Box SSCC-->
+                  <parentID>(00)00000030020199998</parentID>     
+                     <childEPCs>
+                     <!--SGTIN from pallet 2-->
+                            <epc>(01)000000006193(21)9977205361110</epc>
+                                  <epc>(01)000000006193(21)9976511921889</epc>
+                 </childEPCs>          
+                  <action>ADD</action>
+                  <bizStep>urn:epcglobal:cbv:bizstep:packing</bizStep>
+                  <disposition/>
+                  <readPoint>
+                     <id>urn:epc:id:sgln:0000</id>
+                  </readPoint>
+                  <bizLocation>
+                     <id>urn:epc:id:sgln:0000</id>
+                  </bizLocation>
+                  <bizTransactionList/>
+                  <extension>
+                     <quantityList/>
+                     <sourceList/>
+                     <destinationList/>
+                  </extension>
+                  <SAPExtension>
+                     <objAttGroupList/>
+                  </SAPExtension>
+               </AggregationEvent>
+             </EventList>
+         </EPCISBody>
+      </epcis:EPCISDocument>
+   </soapenv:Body>
+</soapenv:Envelope>
