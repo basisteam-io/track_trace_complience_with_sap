@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:_-STTP_-INT_REC_SNR_USAGE>
+         <ET_RETURN>          
+         </ET_RETURN>
+         <!--Optional:-->
+         <IT_SNR>
+            <!--Zero or more repetitions:-->
+            <item>
+               <SERNO>5066417717124</SERNO>
+               <REASON>3</REASON>
+            </item>
+               <item>
+               <SERNO>9069417717127</SERNO>
+               <REASON>3</REASON>
+            </item>
+         </IT_SNR>
+       
+         <!--Optional:-->
+         <IV_GTIN>0000000009431</IV_GTIN>
+         <!--Optional:-->
+         <IV_LISTRNG_IND></IV_LISTRNG_IND>
+         <!--Optional:-->
+         <IV_SYSNAME>PHARMTRACE</IV_SYSNAME>
+      </urn:_-STTP_-INT_REC_SNR_USAGE>
+   </soapenv:Body>
+</soapenv:Envelope>
